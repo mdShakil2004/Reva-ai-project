@@ -1,0 +1,26 @@
+.bg-gradient-radial {
+  background: radial-gradient(circle at center, #1f2937 0%, #374151 70%);
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+.animate-pulseRing {
+  animation: pulseRing 2s infinite;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}

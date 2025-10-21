@@ -1,0 +1,38 @@
+@keyframes right-to-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0.3;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0.3;
+  }
+}
+@keyframes left-to-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.3;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0.3;
+  }
+}
+.animate-chip-right-to-left {
+  animation: right-to-left 20s ease-in-out;
+}
+.animate-chip-left-to-right {
+  animation: left-to-right 20s ease-in-out;
+}
